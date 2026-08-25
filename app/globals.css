@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  --font-geist: sans-serif;
+}
+
+body {
+  font-family: var(--font-geist), system-ui, -apple-system, sans-serif;
+}
+
+/* Table styles */
+.table-auto th {
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
